@@ -1,0 +1,30 @@
+// 재활용 인수
+@mixin center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin size($data){
+  width:$data;
+  height:$data;
+}
+$color-orange:orange;
+.container{
+@include center;
+background-color:$color-orange;
+// width:200px;
+// height:200px;
+@include size(200px);
+margin-bottom:100px;
+  .item{
+    @include size(100px);
+    @include center;
+    background-color:yellow;
+  }
+}
+.box{
+  @include size(100px);
+  @include center;
+  background-color:green;
+}

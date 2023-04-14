@@ -1,0 +1,39 @@
+// 재활용 만들기
+@mixin center{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+$size:100px;
+$color-orange:orange;
+
+.container{
+  width:$size * 2;
+  height:$size * 2;
+  background-color:$color-orange;
+  margin-bottom:($size / 2);
+  @include center;
+  .item{
+    @include center;
+    width:$size;
+    height:$size;
+    background-color:#fff;
+    color:$color-orange;
+  }
+}
+.box{
+  width:$size * 3;
+  height:$size * 3;
+  background-color:yellow;
+  color:$color-orange;
+  @include center;
+  .data{
+    width:$size;
+    height:$size;
+    background-color:green;
+    color:#fff;
+    @include center;
+  }
+}
