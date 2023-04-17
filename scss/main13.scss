@@ -1,0 +1,19 @@
+.box{
+  $color:orange;
+  $color1:#908777;
+  width:200px;
+  height:100px;
+  margin-bottom:20px;
+  background-color:$color;
+  &.data{
+  // background-color:mix($color,red);
+  // background-color:lighten($color,20%);
+  // background-color:darken($color,20%);
+  // background-color:saturate($color1,100%);
+  // background-color:desaturate($color,60%);
+  // background-color:grayscale($color);
+  // background-color:invert($color);
+  background-color:rgba($color,0.2);
+
+  }
+}
